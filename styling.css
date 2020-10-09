@@ -1,0 +1,31 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*convert the container to a flexbox*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#title{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-display: swap;
+  letter-spacing: inherit;
+}
+
+.column{
+  /* this would have divided our 4 columns into iszes of 1,1,1,1 that is into equal parts. */
+    flex: 1;
+
+flex-basis: 300px;
+    /* min-width: 300px; */
+}
+
+img{
+    width: 100%;
+}
